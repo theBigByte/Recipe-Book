@@ -6,7 +6,7 @@ import { RecipeStartComponent } from "./recipes/recipe-start/recipe-start.compon
 import { RecipeDetailComponent } from "./recipes/recipe-detail/recipe-detail.component";
 
 /* To define paths for the routing, we use 'Routes' as import from angular/router
-and define all the paths below as shown */
+and define all the paths below as shown  */
 
 const appRoutes : Routes = [
     {path:'',redirectTo:'/recipes',pathMatch:'full'},//empty path should always use 'full' as pathMatch
@@ -14,7 +14,7 @@ const appRoutes : Routes = [
         {path:'',component:RecipeStartComponent, pathMatch:'full'},
         {path:':id',component:RecipeDetailComponent}
     ]},
-    
+
     {path:'shopping-list',component:ShoppingListComponent}
 ];
 
