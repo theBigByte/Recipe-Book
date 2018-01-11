@@ -14,6 +14,7 @@ import { dropDown } from './shared/dropDown.directive';
 import { shoppingService } from './shared/shopping.service';
 import { appRoutingModel } from './app-routing.module';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.compon
   ],
   imports: [
     BrowserModule,
-    appRoutingModel
+    appRoutingModel,
+    FormsModule
   ],
   providers: [shoppingService],
   bootstrap: [AppComponent]
